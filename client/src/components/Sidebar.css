@@ -1,0 +1,126 @@
+.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 80px;
+  align-self: flex-start;
+}
+
+.profile-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  transition: background 0.2s;
+}
+
+.profile:hover {
+  background: #f5f5f5;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.fullname {
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+.upload-box {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upload-box h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.file-label {
+  background: #efefef;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px dashed #b3b3b3;
+}
+
+.file-label:hover {
+  background: #e0e0e0;
+}
+
+.preview {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 220px;
+  object-fit: cover;
+  background: black;
+}
+
+.upload-box textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  resize: none;
+  outline: none;
+  min-height: 60px;
+  font-family: inherit;
+}
+
+.upload-box button {
+  background: #0095f6;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.upload-box button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.upload-box button:hover:not(:disabled) {
+  background: #0077c2;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    max-width: 500px;
+  }
+}

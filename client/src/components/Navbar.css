@@ -1,0 +1,71 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  background: white;
+  border-bottom: 1px solid #dbdbdb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Billabong", cursive, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #262626;
+  font-style: italic;
+}
+
+.search {
+  width: 250px;
+  padding: 8px 15px;
+  background: #efefef;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 22px;
+}
+
+.nav-icons a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.user-switch {
+  padding: 6px 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  background: white;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  font-size: 13px;
+}
+
+.new-profile-btn {
+  background: #0095f6;
+  color: white !important;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.new-profile-btn:hover {
+  background: #0077c2;
+}

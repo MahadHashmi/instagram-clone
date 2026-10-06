@@ -1,0 +1,22 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Build
+client/build/
+client/.env
+server/.env
+
+# Uploaded files
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Data
+server/data/*.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/

@@ -1,0 +1,10 @@
+node_modules/
+client/build/
+server/uploads/*
+!server/uploads/.gitkeep
+server/data/*.json
+!server/data/.gitkeep
+.env
+.DS_Store
+Thumbs.db
+.vscode/
